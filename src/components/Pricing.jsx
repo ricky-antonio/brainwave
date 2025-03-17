@@ -1,3 +1,4 @@
+import { ScrollParallax } from "react-just-parallax";
 import { smallSphere, stars } from "../assets";
 import Heading from "./Heading";
 import PricingList from "./PricingList";
@@ -16,6 +17,7 @@ const Pricing = () => {
                         width={255}
                         height={255}
                     />
+                    <ScrollParallax isAbsolutelyPositioned>
                     <div className="absolute top-1/2 left-1/2 w-[60rem] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
                         <img
                             src={stars}
@@ -25,6 +27,7 @@ const Pricing = () => {
                             height={400}
                         />
                     </div>
+                    </ScrollParallax>
                 </div>
                 <Heading tag="Get started with Brainwave" title="Pay once, use forever" />
                 <div className="relative">
